@@ -65,3 +65,47 @@ aside > :last-child,
 	- 640px
 	- 1000px
 */
+
+
+.reklamy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .obsah {
+    display: flex;
+  }
+  .clanek {
+    width: 60%;
+  }
+  .reklamy {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .kontejner {
+    display: flex;
+  }
+
+  .obsah {
+    flex-direction: column;
+    width: 75%;
+  }
+
+  .reklamy {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu {
+    width: 25%;
+  }
+
+  .reklama1,
+  .reklama2 {
+    width: 50%;
+  }
+}
